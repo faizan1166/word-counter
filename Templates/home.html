@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block body %}
+<center>
+<br>
+<p id="minitool-title" class="backlinks__title" style="font-weight: 1000;
+    text-align: center; font-size:50px;">Website Words Counter</p>
+	<p class="backlinks__description" style="font-size:20px; color:red;">Text Somethiong In Box.</p>
+
+<form action="/count">
+	<textarea colS="100" rows="10" name="fulltext"></textarea>
+	<br />
+	<button class="btn btn-success" type="submit">count! </button>
+</form>
+</center>
+{% endblock %}

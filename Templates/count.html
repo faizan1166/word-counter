@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block body %}
+<center>
+<h1>There are {{words}} words in your text</h1>
+
+
+<h1>your text :</h1>
+{{fulltext}}
+</center>
+<div class="container mx-3 my-2">
+{% for word,counttotal in sortedwords %}
+ <h3>Counter</h3>
+
+   {{word}} : {{counttotal}}
+<br />
+
+{% endfor %}
+</div>
+{% endblock %}
